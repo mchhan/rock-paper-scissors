@@ -4,6 +4,7 @@ function game() {
         console.log("Player has chosen to play" + " " + playerSelection);
         
         let computerSelection;
+
         function computerSelectionPlay() {
             let int = Math.floor(Math.random() * (3 - 1 + 1) + 1)
             if (int === 1) {
@@ -39,7 +40,6 @@ function game() {
             }
             return result;
         }
-        
         console.log(singleRound(playerSelection, computerSelection));
     }
 }
