@@ -1,7 +1,4 @@
 function game() {
-    for (let i = 0;  i < 5; i++) {
-        let playerSelection = prompt("Do you choose Rock, Paper, or Scissors?").toLowerCase();
-        console.log("Player has chosen to play" + " " + playerSelection);
         
         let computerSelection;
 
@@ -41,7 +38,6 @@ function game() {
             return result;
         }
         console.log(singleRound(playerSelection, computerSelection));
-    }
 }
 
 console.log(game());
