@@ -1,0 +1,51 @@
+.title {
+    display: block;
+    text-align: center;
+    font-size: 32px;
+}
+
+.game_area {
+    display: flex;
+}
+
+.player_info {
+    flex: 1;
+    border: 1px solid black;
+    margin: 20px;
+    height: 80vh;
+}
+
+.hand_choice_image {
+    display: inline-flex;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.rock {
+    display: block;
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+}
+
+.paper {
+    display: block;
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+}
+
+.scissors {
+    display: block;
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+}
+
+.computer_info {
+    flex: 1;
+    border: 1px solid black;
+    margin: 20px;
+    height: 80vh
+}
