@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Rock, Paper, Scissors Game! </title>
-    <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -18,16 +17,20 @@
     <main class="game_area">
         <div class="player_info">
             <h1 class="h1"> Player's Choice </h1>
-                <p class="hand_choice_image">
-                        <button id="rock"><img src="rock.webp" class="rock"></button>
-                        <button id="paper"><img src="paper.webp" class="paper"></button>
-                        <button id="scissors"><img src="scissors.webp" class="scissors"></button>
+                <p class="hand-choice-image" id="playerHand">
+                        <button type="button" id="rock" class="button" onClick="playerSelectionPlay(this.value)" value="rock"><img src="rock.webp" class="rock" onclick="rock" value="rock"> Rock </button>
+                        <button type="button" id="paper" class="button" onClick="playerSelectionPlay(this.value)" value="paper"><img src="paper.webp" class="paper" onclick="paper" value="paper"> Paper </button>
+                        <button type="button" id="scissors" class="button" onClick="playerSelectionPlay(this.value)" value="scissors"><img src="scissors.webp" class="scissors" onclick="scissors" value="scissors"> Scissors </button>
                 </p>
+            <h2 class="result"> Result = </h2>
         </div>
 
         <div class="computer_info">
-            <h1 class="h2"> Computer Plays </h1>
+            <h1 class="h2"> Computer's Choice </h1>
+            <h2 class="result">Computer plays </h2>
         </div>
     </main>
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
